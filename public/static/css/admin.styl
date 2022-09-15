@@ -1,0 +1,384 @@
+color1=#95b8f6 //color
+color2=#fdd700
+color3=rgb(173, 14, 236)
+color4=#95b8f6
+//color5= Config::get('saporis.map')
+colornegro=#111111
+colorblanco=#fff
+
+colorprincipal=#789ECB //color
+
+
+body
+    background-color: #f5f6fa
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+
+h2,h3,h4,h5,ul,body, html
+    padding: 0px
+    margin: 0px
+.mtop16
+    margin-top: 12px
+.mtop32
+    margin-top: 32px
+
+.mb32
+    margin-bottom: 32px
+
+.mb16
+    margin-bottom: 16px
+
+.wrapper
+    min-height: 100vh
+    overflow: hidden
+    .col1
+        float: left
+        position: relative
+        z-index 999
+        width 17%
+    .col2
+        float: left
+        width: 83%
+        
+.sidebar
+    background-color: white
+    min-height: 100vh
+    .section-top
+        background-color: color1 // color
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0, 0.15)
+    .logo
+        display block
+        margin: 0px auto
+        padding-top 2px
+        width: 60%
+        .img-fluid
+            border-radius: 50%
+       
+    .user
+        color: colorblanco !important
+        padding: 16px
+        a
+            color colorblanco
+            font-size: 1.2em
+    .main
+        display block
+        margin-top 8px
+        ul
+            li
+                margin-bottom: 4px
+                a
+                    color: #8998AC !important
+                    display: block
+                    font-size: 1.1em
+                    padding: 12px 12px
+                    text-decoration: none
+                    i
+                        margin-right: 10px
+                    &:hover
+                        background-color: color1 //color
+                        box-shadow: 0 0.5rem 1rem rgba(0,0,0, 0.15)
+                        color: colorblanco !important
+                        text-decoration: none
+                a.active
+                        background-color: color1 //color
+                        box-shadow: 0 0.5rem 1rem rgba(0,0,0, 0.15)
+                        color: colorblanco !important
+                        text-decoration: none
+
+
+.navbar
+    background-color: color1 //color
+    a
+        color: colorblanco !important
+    
+.page
+    padding-top: 16px
+    padding-bottom: 16px
+    .breadcrumb
+        border-radius: 4px
+        background-color: colorblanco
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.10) !important
+        .breadcrumb-item
+            margin-left: 8px
+            padding-top: 8px
+            padding-bottom: 8px     
+            a
+                color: color1
+                text-decoration: none
+            &:hover
+                text-decoration: none !important
+    .panel
+        background-color: colorblanco
+        border-radius: 4px
+        border-bottom: 2px solid color1 //color
+        width: 100%
+        .header
+            border-bottom: 1px solid #e8e8e8
+            h2.title
+                display: inline-block
+                color #19213d
+                font-size: 1.1em
+                padding: 12px 12px
+            ul
+                display: inline-block
+                float: right
+                margin-right: 12px
+                li
+                    display: inline-block
+                    position: relative
+                    
+                    a
+                        color #333
+                        text-decoration: none 
+                        display: inline-block
+                        padding: 10px
+                        &:hover                            
+                            background-color: #f6f6f6
+                            color #22
+                        i
+                            color: color1 // color
+                    
+                            
+                    ul
+                        display: none
+                        border: 1px solid #f0f0f0
+                        float: none
+                        background-color: colorblanco
+                        position absolute
+                        right: -16px
+                        width: 200px
+                        li
+                            display: inline-block
+                            border-bottom: 1px solid #f0f0f0
+                            width: 100%
+                            &:last-child
+                                border-bottom: 0px
+                            a
+                                display: block
+                                width: 100%
+                    &:hover
+                        ul
+                            //para que se vea aun costado
+                            // display: block position relative
+                            display: block
+                            
+                            li
+                                a  
+                                    display: block
+        .inside
+            padding: 12px
+            .nav
+                .nav-link
+                    border: 1px solid color1 //color
+                    margin-right: 8px
+                    &:hover
+                        background-color: color1 //color
+                        color: colorblanco
+            .form_search
+                display: none
+                margin-bottom: 16px
+                .btn
+                    width: 100%
+            .big_count
+                display: block
+                text-align: center
+                width: 100%
+                font-size: 2em
+
+        .list-group
+            border-radius: 0px !important
+            a.list-group-item
+                border-radius: 4px
+                border-top: 0px
+                border-bottom: 0px
+                border-left: 0px
+                border-right: 0px
+                &:first-child
+                    border-top: 0px
+                &:last-child
+                    border-bottom: 0px
+            a.active
+                background-color: color1
+                .badge
+                    background-color: colorblanco !important
+                    color #333
+
+.opts
+    overflow: hidden
+    a
+        align-items: center
+        display: flex
+        justify-content: center
+        border-radius: 4px
+        border: 1px solid #dedede
+        margin-right: 6px
+        border-radius: 50%
+        height: 38px
+        width: 38px
+        float: left 
+        cursor pointer
+        font-size: 1em
+        text-decoration: none        
+        color: color1
+        
+    a.edit
+        background-color: color1
+        color: colorblanco
+    a.inventory
+        background-color: color2
+        color: colorblanco
+    a.delete
+        background-color: #FF756D
+        color: colorblanco
+    a.restore
+        background-color: #83D9DC
+        color: colorblanco
+    a.variants
+        background-color: #B5EAD7
+        color: colorblanco
+    a.list
+        background-color: #ffda9e
+        color: colorblanco
+    a.permissions
+        background-color: #a0d995
+        color: colorblanco
+
+.space
+    margin-top 7px
+    margin-bottom: 7px
+
+.product_gallery
+    overflow: hidden
+    .btn-submit        
+        display: block
+        margin-right: 1%
+        width: 100%
+        a
+            border: 1px dashed #666
+            display: block
+            border-radius: 4px
+            color: #333
+            font-size: 1.5em
+            text-align: center
+            padding: 12px
+            width: 100%
+            &:hover
+                background-color: color1 //color
+                color: colorblanco 
+    .tumbs
+        overflow: hidden
+        
+        .tumb
+            float: left
+            margin-top: 16px 
+            position: relative
+            width: 48%
+            a
+                background-color: rgba(0,0,0, 0.5)
+                color: colorblanco
+                border-radius: 50%
+                padding: 6px 10px
+                display: inline-block
+                position: absolute
+                bottom: 8px
+                right 8px
+            img
+                border-radius: 4px
+                width: 100%
+            &:nth-child(odd)
+                margin-right: 4%
+    
+.page_user
+    .mini_profile
+        .avatar
+            display: block
+            margin: 0px auto
+            border-radius: 50%
+            width: 300px
+        .info
+            background-color: colorblanco
+            span
+                display: block
+                font-size: 1.1em
+                width: 100%
+            span.title
+                font-weight: bold
+                margin-top: 16px
+        .btn
+            width: 100%
+            margin-top: 16px
+
+.alert
+    ul
+        list-style-position: inside
+        margin-left: 16px
+
+.slider_content
+    background-color: #f9f9f9
+    border-radius: 4px
+    padding: 16px
+    h2
+        font-size: 1.4em
+        margin: 0px
+        padding: 0px
+
+    h1
+        font-size: 1.6em
+        font-weight: bold
+
+.order
+    .profile
+        .photo
+            display: block
+            width: 100%
+            img
+                display: block
+                margin: 0px auto
+                width: 96px
+        .info
+            ul
+                list-style: none
+                li
+                    margin-bottom: 4px 
+
+.mcswitch
+    background-color: #f0f0f0
+    border-radius: 20.4px
+    padding: 4px
+    overflow: hidden
+    a
+        display: block
+        text-decoration: none
+        color: #111
+        width: 49%
+        float: left
+        text-align: center
+        padding: 8px
+        border-radius: 16.4px
+        //font-size: .8em
+        &:hover
+            background-color: colorblanco
+        &:last-child
+            margin-left: 2%
+    a.active
+        background-color: colorprincipal
+        color: colorblanco
+    
+.payment_methods
+    a
+        border-radius: 16px
+        //text-align: center
+        border: 1px solid #f6f6f6
+        margin-bottom: 4px
+        display: block
+        text-decoration: none
+        padding: 8px 16px
+        width: 100%
+        &:last-child
+            margin-bottom: 0px
+        &:hover
+            background-color: colorprincipal
+            color: colorblanco
+    a.active
+        background-color: colorprincipal
+        color: colorblanco
